@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "maxim-vms-ui": {
+    "fusion-erp-ui": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -65,7 +65,7 @@
           },
           "defaultConfiguration": "production",
           "options": {
-            "outputPath": "dist/maxim-vms-ui",
+            "outputPath": "dist/fusion-erp-ui",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -88,10 +88,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "maxim-vms-ui:build:production"
+              "buildTarget": "fusion-erp-ui:build:production"
             },
             "development": {
-              "buildTarget": "maxim-vms-ui:build:development"
+              "buildTarget": "fusion-erp-ui:build:development"
             }
           },
           "defaultConfiguration": "development"
