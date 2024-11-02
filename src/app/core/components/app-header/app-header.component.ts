@@ -38,7 +38,7 @@ export class AppHeaderComponent implements OnInit, AfterViewInit {
   });
 
   buttons = [
-    {label: 'Pending', status: 'pending', key: 'pending'},
+    {label: 'Orders', status: 'order', key: 'order'},
     {label: 'Approved', status: 'approved', key: 'approved'},
     {label: 'Checked-In', status: 'checkedIn', key: 'checkedIn'},
     {label: 'Checked-Out', status: 'checkedOut', key: 'checkedOut'},

@@ -4,14 +4,39 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2aadd879-6f18-4561-a077-226bc6578bd4" name="Changes" comment="" />
+    <list default="true" id="2aadd879-6f18-4561-a077-226bc6578bd4" name="Changes" comment="docker v2">
+      <change afterPath="$PROJECT_DIR$/src/app/modules/components/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/modules/service/order.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.routes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/core/components/app-header/app-header.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/core/components/app-header/app-header.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/modules/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/modules/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/environments/environment.development.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/environments/environment.development.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/environments/environment.production.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/environments/environment.qa.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/environments/environment.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="MIXED" />
+    <option name="SWAP_SIDES_IN_COMPARE_BRANCHES" value="true" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -19,6 +44,31 @@
     &quot;assignee&quot;: &quot;ThimiraSadeesha&quot;
   }
 }</component>
+  <component name="GitToolBoxStore">
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="dev" />
+                    <option name="lastUsedInstant" value="1730580034" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1730580033" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
+  </component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/ThimiraSadeesha/fusion-erp-ui.git&quot;,
@@ -32,48 +82,36 @@
   &quot;associatedIndex&quot;: 4
 }</component>
   <component name="ProjectId" id="2oIq7MnfuLuAJvRKzfzKBYskae8" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Volumes/Thimira/Thimira/Lumiraq/Navoda/fusion-ui&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.qodana&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Volumes/Thimira/Thimira/Lumiraq/Navoda/fusion-ui/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "dev",
+    "last_opened_file_path": "/Volumes/Thimira/Thimira/Lumiraq/Navoda/fusion-ui/src/app/modules/components",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "settings.qodana",
+    "ts.external.directory.path": "/Volumes/Thimira/Thimira/Lumiraq/Navoda/fusion-ui/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="QodanaCloudProjectLink">
-    <option name="lastReportId" value="KMxyW" />
     <option name="linkedProjectId" value="AmgOq" />
-    <option name="linkedProjectName" value="fusion-erp-api" />
     <option name="organizationId" value="ARM7E" />
     <option name="userId" value="xPZXr" />
   </component>
-  <component name="QodanaHighlightedReportService">
-    <option name="cloudReportPersistedInfo">
-      <CloudReportPersistedInfo>
-        <option name="projectId" value="AmgOq" />
-        <option name="reportId" value="KMxyW" />
-      </CloudReportPersistedInfo>
-    </option>
-  </component>
-  <component name="QodanaIsSelectedPersistenceService">
-    <option name="selectedOrLoading" value="true" />
-  </component>
-  <component name="QodanaReportsService">
-    <option name="descriptions">
-      <ReportDescription localRun="true" path="/private/var/folders/lp/94xhyd1s4dq317b08g4f6bd80000gn/T/qodana_output/qodana.sarif.json" publishedReportLink="https://qodana.cloud/projects/A6E1y/reports/821NG" reportGuid="81b87d88-a0a9-4216-b18b-45182705eb98" reportId="fusion-ui/qodana/2024-11-02" />
-    </option>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/app/modules/components" />
+    </key>
   </component>
   <component name="RunManager" selected="npm.Angular CLI Server">
     <configuration name="Angular Application" type="JavascriptDebugType" uri="http://localhost:4200">
@@ -110,6 +148,119 @@
       <workItem from="1730569951000" duration="345000" />
       <workItem from="1730570314378" duration="14000" />
     </task>
+    <task id="LOCAL-00001" summary="docker file">
+      <option name="closed" value="true" />
+      <created>1730573552717</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1730573552717</updated>
+    </task>
+    <task id="LOCAL-00002" summary="docker file updated">
+      <option name="closed" value="true" />
+      <created>1730574571420</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1730574571420</updated>
+    </task>
+    <task id="LOCAL-00003" summary="docker compose">
+      <option name="closed" value="true" />
+      <created>1730574823982</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1730574823982</updated>
+    </task>
+    <task id="LOCAL-00004" summary="docker compose">
+      <option name="closed" value="true" />
+      <created>1730574934319</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1730574934319</updated>
+    </task>
+    <task id="LOCAL-00005" summary="docker compose">
+      <option name="closed" value="true" />
+      <created>1730575126681</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1730575126681</updated>
+    </task>
+    <task id="LOCAL-00006" summary="docker compose">
+      <option name="closed" value="true" />
+      <created>1730575765781</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1730575765781</updated>
+    </task>
+    <task id="LOCAL-00007" summary="docker v1">
+      <option name="closed" value="true" />
+      <created>1730576054737</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1730576054737</updated>
+    </task>
+    <task id="LOCAL-00008" summary="nginx v1">
+      <option name="closed" value="true" />
+      <created>1730576477033</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1730576477033</updated>
+    </task>
+    <task id="LOCAL-00009" summary="nginx v2">
+      <option name="closed" value="true" />
+      <created>1730577047642</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1730577047642</updated>
+    </task>
+    <task id="LOCAL-00010" summary="nginx v3">
+      <option name="closed" value="true" />
+      <created>1730577548739</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1730577548739</updated>
+    </task>
+    <task id="LOCAL-00011" summary="nginx v4">
+      <option name="closed" value="true" />
+      <created>1730578552754</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1730578552754</updated>
+    </task>
+    <task id="LOCAL-00012" summary="docker v2">
+      <option name="closed" value="true" />
+      <created>1730578809910</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1730578809910</updated>
+    </task>
+    <task id="LOCAL-00013" summary="docker v2">
+      <option name="closed" value="true" />
+      <created>1730578926187</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1730578926187</updated>
+    </task>
+    <task id="LOCAL-00014" summary="docker v2">
+      <option name="closed" value="true" />
+      <created>1730579474124</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1730579474124</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -131,5 +282,17 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="docker file" />
+    <MESSAGE value="docker file updated" />
+    <MESSAGE value="docker compose" />
+    <MESSAGE value="docker v1" />
+    <MESSAGE value="nginx v1" />
+    <MESSAGE value="nginx v2" />
+    <MESSAGE value="nginx v3" />
+    <MESSAGE value="nginx v4" />
+    <MESSAGE value="docker v2" />
+    <option name="LAST_COMMIT_MESSAGE" value="docker v2" />
   </component>
 </project>

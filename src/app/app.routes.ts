@@ -1,16 +1,17 @@
 import { Routes } from '@angular/router';
+import {OrderComponent} from "./modules";
 
 export const routes: Routes = [
   {
     path: '',
-    redirectTo: 'visitors',
+    redirectTo: 'order',
     pathMatch: 'full'
   },
-  // {
-  //   path: 'visitors',
-  //   component: VisitorGridComponent,
-  //
-  // },
+  {
+    path: 'order',
+    component: OrderComponent,
+
+  },
   // {
   //   path: 'visitor-create',
   //   component: VisitorCreateComponent,
