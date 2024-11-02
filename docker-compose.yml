@@ -7,7 +7,7 @@ services:
       dockerfile: Dockerfile
     container_name: fusion-erp-ui
     ports:
-      - "8080:80"
+      - "3030:80"
     networks:
       - webnet
     restart: always
