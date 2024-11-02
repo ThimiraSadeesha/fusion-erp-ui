@@ -14,7 +14,7 @@ services:
     image: nginx:latest
     container_name: nginx-server
     ports:
-      - "3030:80"  # Exposing port 80 of the container on port 3030 of the host
+      - "8081:80"  # Exposing port 80 of the container on port 8081 of the host
     volumes:
       - ./nginx.conf:/etc/nginx/conf.d/default.conf  # Mount nginx.conf to container
     depends_on:
