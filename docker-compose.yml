@@ -1,16 +1,27 @@
+version: '3.8'
+
 services:
   angular-app:
     build:
       context: .
       dockerfile: Dockerfile
     container_name: fusion-erp-ui
-    ports:
-      - "3030:80"  # Exposing port 80 of the container on port 3030 of the host
     networks:
       - webnet
     restart: always
+
+  nginx:
+    image: nginx:latest
+    container_name: nginx-server
+    ports:
+      - "3030:80"  # Exposing port 80 of the container on port 3030 of the host
     volumes:
       - ./nginx.conf:/etc/nginx/conf.d/default.conf  # Mount nginx.conf to container
+    depends_on:
+      - angular-app  # Ensures Nginx starts after the Angular app
+    networks:
+      - webnet
+    restart: always
 
 networks:
   webnet:
