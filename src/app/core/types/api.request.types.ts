@@ -1,7 +1,7 @@
 import {APIRequestResources} from "../enums"
 
 export type APIRequestResource =
-  APIRequestResources.AuthService |
+  APIRequestResources.ShopService |
   APIRequestResources.OrderService|
   APIRequestResources.EmployeeService
 

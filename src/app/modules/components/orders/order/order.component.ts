@@ -41,7 +41,7 @@ export class OrderComponent {
     openModal = false;
     constructor() {
         effect(() => {
-            this.orderData = this.orderService.all()
+            // this.orderData = this.orderService.all()
         });
     }
 
@@ -50,7 +50,7 @@ export class OrderComponent {
         this.openModal = false;
     }
 
-    fetchVisitors() {
+    fetchOrders() {
         this.loading.setLoading(true);
         this.orderService.find(this.searchParams, true).subscribe({
             next: (response) => {
@@ -77,11 +77,16 @@ export class OrderComponent {
             ...this.searchParams,
             page_number: Number(pageNumber)
         };
-        this.fetchVisitors();
+        this.fetchOrders();
     }
 
     handleClick(id: number) {
         this.orderService.getById(String(id), true).subscribe();
+    }
+
+    clearSearch() {
+        this.searchParams.payment_type = ''
+        this.fetchOrders()
     }
 
 }
