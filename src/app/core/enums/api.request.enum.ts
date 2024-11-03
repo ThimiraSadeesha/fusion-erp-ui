@@ -1,8 +1,8 @@
 export enum APIRequestResources {
   AuthService = 'auth',
-  ApplicationService = 'application',
+  OrderService= 'order',
   EmployeeService = 'employee',
-  VisitorService = 'visitor',
+  ShopService = 'shop',
   UnitService = 'units',
 }
 
