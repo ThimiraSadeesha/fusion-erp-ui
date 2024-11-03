@@ -127,7 +127,7 @@
       }
     }
 
-    &.checkedin {
+    &.completed {
       @apply bg-green-100 text-green-800;
       &::before {
         @apply bg-green-500;
@@ -148,7 +148,7 @@
       }
     }
 
-    &.returned-NA {
+    &.return {
       @apply bg-lime-100 text-lime-800;
       &::before {
         @apply bg-lime-500;
