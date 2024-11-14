@@ -1,5 +1,5 @@
 export const environment = {
-  production: false,
+  production: true,
 
   API_BASE: 'https://api.navoda.fusion.lumiraq.com',
   // API_BASE: 'http://localhost:3001',
