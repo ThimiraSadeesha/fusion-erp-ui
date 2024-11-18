@@ -20,23 +20,24 @@ export interface OrderData{
 }
 
 
-interface ProductDetailsDTO {
+export interface ProductDetailsDTO {
     productId: number;
     productName: string;
     description: string;
     basePrice: number;
+    unit: string;
     cost: number;
 }
 
 
-interface VariantDetailsDTO {
+export interface VariantDetailsDTO {
     variantId: number;
     weight: number;
     price: number;
 }
 
 
-interface OrderItemDTO {
+export interface OrderItemDTO {
     orderItemId: number;
     productId: number;
     quantity: number;
@@ -49,7 +50,7 @@ interface OrderItemDTO {
 }
 
 // DTO for Shop Details
-interface ShopDetailsDTO {
+export interface ShopDetailsDTO {
     shopId: number;
     shopCode: string;
     fullName: string;
@@ -72,3 +73,81 @@ export interface GetOrderDTO {
     shopDetails: ShopDetailsDTO;
     orderItems: OrderItemDTO[];
 }
+
+export interface ViewData {
+    orderId: number;
+    status: string;
+    shopId: number;
+    salesRepId: number;
+    orderReference: string;
+    orderDate: string;
+    paymentType: string;
+    shopDetails: ShopDetails;
+    orderItems: OrderItem[];
+}
+
+export interface ShopDetails {
+    shopId: number;
+    shopCode: string;
+    fullName: string;
+    shortName: string;
+    address: string;
+    mobile: string;
+    routeId: number;
+    status: string;
+}
+
+export interface OrderItem {
+    orderItemId: number;
+    productId: number;
+    quantity: number;
+    price: number;
+    totalPrice: number;
+    status: string; //
+    variantId: number;
+    productDetails: ProductDetails;
+    variantDetails: VariantDetails;
+}
+
+export interface ProductDetails {
+    productId: number;
+    productName: string;
+    description: string;
+    unit: string;
+    basePrice: number;
+    cost: number;
+}
+
+export interface VariantDetails {
+    variantId: number;
+    weight: number;
+    price: number;
+}
+
+export interface OrderItemsData {
+    orderItemId: number;
+    productId: number;
+    quantity: number;
+    price: number;
+    totalPrice: number;
+    status: string; //
+    variantId: number;
+    productDetails: ProductDetails;
+    variantDetails: VariantDetails;
+}
+
+export interface ProductDetails {
+    productId: number;
+    productName: string;
+    description: string;
+    unit: string;
+    basePrice: number;
+    cost: number;
+}
+
+export interface VariantDetails {
+    variantId: number;
+    weight: number;
+    price: number;
+}
+
