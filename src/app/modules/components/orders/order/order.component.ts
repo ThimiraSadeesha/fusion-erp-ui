@@ -1,8 +1,8 @@
 import {Component, effect, inject} from '@angular/core';
-import {DatePipe, NgClass} from "@angular/common";
+import {DatePipe, NgClass, NgForOf} from "@angular/common";
 import {FormsModule} from "@angular/forms";
 import {OrderService} from "../service/order.service";
-import {OrderData} from "../interface/order.entity";
+import {GetOrderDTO, OrderData, ViewData} from "../interface/order.entity";
 import {LoadingService, NotificationService, PaginationComponent} from "../../../../core";
 import {DotLoadingServices} from "../../../../core/services/dot-loading.Services";
 
@@ -13,7 +13,8 @@ import {DotLoadingServices} from "../../../../core/services/dot-loading.Services
         NgClass,
         FormsModule,
         DatePipe,
-        PaginationComponent
+        PaginationComponent,
+        NgForOf
     ],
     templateUrl: './order.component.html',
     styleUrl: './order.component.scss'
@@ -24,6 +25,11 @@ export class OrderComponent {
     notification = inject(NotificationService);
     loading = inject(DotLoadingServices);
     orderData: OrderData[] = []
+    viewItemData: ViewData[] = []
+    totalOrderItems: number = 0;
+    itemsOrderPerPage: number = 5;
+    currentPage: number = 1;
+    pagedOrderItems: any[] = [];
 
 
     searchParams = {
@@ -41,9 +47,15 @@ export class OrderComponent {
     openModal = false;
     constructor() {
         effect(() => {
-            // this.orderData = this.orderService.all()
+            const orderItems = this.orderService.active();
+            if (orderItems) {
+                this.viewItemData.push(orderItems);
+            }
         });
     }
+
+
+
 
 
     closeModal() {
@@ -89,4 +101,5 @@ export class OrderComponent {
         this.fetchOrders()
     }
 
+    // protected readonly it = it;
 }

@@ -8,7 +8,7 @@
                         name="visitorType"
                         [(ngModel)]="searchParams.payment_type"
                         (change)="fetchOrders()">
-                    <option value="" selected disabled >Payment Type</option>
+                    <option value="" selected disabled>Payment Type</option>
                     <option value="">All</option>
                     <option value="cash">Cash</option>
                     <option value="cheque">Cheque</option>
@@ -113,8 +113,8 @@
                     <h3 class="text-lg font-semibold text-gray-900 flex items-center">
                         <span>{{ orderData[0].shopName }}</span>
                         <span class="status-badge ml-4" [ngClass]="orderData[0].orderStatus.toLowerCase()">
-    {{ orderData[0].orderStatus }}
-  </span>
+                             {{ orderData[0].orderStatus }}
+                    </span>
                     </h3>
 
                     <button type="button" (click)="closeModal()"
@@ -133,40 +133,30 @@
                         <table class="table">
                             <thead class="table-thead">
                             <tr>
-                                <th scope="col" class="px-6 py-3"> Order reference</th>
-                                <th scope="col" class="px-6 py-3">Shop Name</th>
-                                <th scope="col" class="px-6 py-3">OrderDate</th>
-                                <th scope="col" class="px-6 py-3">Status</th>
-                                <th scope="col" class="px-6 py-3">Payment Type</th>
-                                <th scope="col" class="px-6 py-3">Sales Rep Name</th>
-                                <th scope="col" class="px-6 py-3">Action</th>
+                                <th scope="col" class="px-6 py-3"> Product Name</th>
+                                <th scope="col" class="px-6 py-3">Quantity</th>
+                                <th scope="col" class="px-6 py-3">Base Price</th>
+                                <th scope="col" class="px-6 py-3">Weight</th>
+                                <th scope="col" class="px-6 py-3">Weight Price</th>
                             </tr>
 
                             </thead>
                             <tbody>
-                                @if (orderData.length) {
-                                    @for (order of orderData; track order.orderId) {
-                                        <tr class="bg-white border-b">
-                                            <td class="px-6 py-4">{{ order.orderReference }}</td>
-                                            <td class="px-6 py-4">{{ order.shopName }}</td>
-                                            <td class="px-6 py-4">{{ order.orderDate | date:'yyyy-MM-dd' }}</td>
-                                            <td class="px-6 py-4"><span class="status-badge"
-                                                                        [ngClass]="order.orderStatus.toLowerCase()">{{ order.orderStatus }}</span>
-                                            </td>
-                                            <td class="px-6 py-4">{{ order.paymentType }}</td>
-                                            <td class="px-6 py-4">{{ order.salesRepName }}</td>
-                                            <td class="px-6 py-4">
-                                                <svg width="20" height="20" class="cursor-pointer" viewBox="0 0 20 20"
-                                                     fill="none" (click)="(this.openModal = true);"
-                                                     xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                            d="M11 14H10V10H9M10 6H10.01M19 10C19 11.1819 18.7672 12.3522 18.3149 13.4442C17.8626 14.5361 17.1997 15.5282 16.364 16.364C15.5282 17.1997 14.5361 17.8626 13.4442 18.3149C12.3522 18.7672 11.1819 19 10 19C8.8181 19 7.64778 18.7672 6.55585 18.3149C5.46392 17.8626 4.47177 17.1997 3.63604 16.364C2.80031 15.5282 2.13738 14.5361 1.68508 13.4442C1.23279 12.3522 1 11.1819 1 10C1 7.61305 1.94821 5.32387 3.63604 3.63604C5.32387 1.94821 7.61305 1 10 1C12.3869 1 14.6761 1.94821 16.364 3.63604C18.0518 5.32387 19 7.61305 19 10Z"
-                                                            stroke="#1C64F2" stroke-width="2" stroke-linecap="round"
-                                                            stroke-linejoin="round"/>
-                                                </svg>
-                                            </td>
+                                @if (viewItemData.length) {
+                                    @for (order of viewItemData; track order) {
+                                        <tr class="bg-white border-b" *ngFor="let item of order.orderItems">
+                                            <td class="px-6 py-4">{{ item.productDetails.productName }}</td>
+                                            <td class="px-6 py-4">{{ item.quantity }}</td>
+                                            <td class="px-6 py-4">{{ item.productDetails.basePrice }}</td>
+                                            <td class="px-6 py-4">{{ item.variantDetails.weight }}{{item.productDetails.unit}}</td>
+                                            <td class="px-6 py-4">{{ item.variantDetails.price }}</td>
                                         </tr>
                                     }
+<!--                                    <app-pagination-->
+<!--                                            [totalItems]="totalOrderItems"-->
+<!--                                            [itemsPerPage]="itemsOrderPerPage"-->
+<!--                                            (pageChanged)="onOrderItemChange($event)">-->
+<!--                                    </app-pagination>-->
                                 } @else {
                                     <tr>
                                         <td colspan="9" class="px-6 py-10">
